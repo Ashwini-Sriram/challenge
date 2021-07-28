@@ -11,13 +11,12 @@
     }
     .wrapper {
       display: grid;
-
       grid-template-rows: repeat(3, 1fr);
-      grid-gap: 10px;
+      grid-template-columns: repeat(2, 1fr);
       width: 100vw;
       height: 100vh;
     }
-    .column {
+    .row {
       border-radius: 2px;
       border-style: solid;
       border-color: azure;
@@ -25,8 +24,11 @@
     }
   </style>
   <div class="wrapper">
-    <div class="column">One</div>
-    <div class="column">two</div>
-    <div class="column">three</div>
+    <div class="row">One</div>
+    <div class="row">two</div>
+    <div class="row">three</div>
+    <div class="row">four</div>
+    <div class="row">five</div>
+    <div class="row">six</div>
   </div>
 </html>

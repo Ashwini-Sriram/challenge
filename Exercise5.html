@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3DIV</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .leftside {
+      float: left;
+    }
+    
+    .pattern1
+    {
+        display: grid;
+        grid-template-columns: 1fr 2fr ;
+        grid-template-rows: 1fr;
+        height: 25vh;
+        width: 70vw;
+    }
+    .pattern2
+    {
+        display: grid;
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 1fr;
+        height: 25vh;
+        width: 70vw;
+    }
+
+    .wrapper2 {
+      display: grid;
+      float: right;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+
+      width: calc(100vw - 70vw);
+      height: 100vh;
+    }
+    .row {
+      border-radius: 2px;
+      border-style: solid;
+      border-color: azure;
+      background-color: aquamarine;
+    }
+  </style>
+
+  <div class="leftside">
+    <div class ="pattern1">
+        <div class="row">One</div>
+        <div class ="row">two</div>
+    </div>
+    <div class ="pattern2">
+        <div class="row">three</div>
+        <div class ="row">four</div>
+    </div>
+    <div class ="pattern1">
+        <div class="row">five</div>
+        <div class ="row">six</div>
+    </div>
+    <div class ="pattern2">
+        <div class="row">seven</div>
+        <div class ="row">eight</div>
+    </div> 
+    </div>
+   
+    </div>
+  </div>
+  <div class="wrapper2">
+    <div class="row">nine</div>
+    <div class="row">ten</div>
+  </div>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3DIV</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .leftside {
+      float: left;
+    }
+    .wrapper {
+      display: grid;
+      grid-template-rows: 1fr;
+      width: 50vw;
+      height: 30vh;
+    }
+    .wrapper1 {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      width: 50vw;
+      height: calc(100vh - 30vh);
+    }
+    .wrapper2 {
+      display: grid;
+      float: right;
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: 1fr;
+      width: calc(100vw - 50vw);
+      height: 100vh;
+    }
+    .row {
+      border-radius: 2px;
+      border-style: solid;
+      border-color: azure;
+      background-color: aquamarine;
+    }
+  </style>
+
+  <div class="leftside">
+    <div class="wrapper">
+      <div class="row">One</div>
+    </div>
+    <div class="wrapper1">
+      <div class="row">two</div>
+      <div class="row">three</div>
+      <div class="row">four</div>
+      <div class="row">five</div>
+    </div>
+  </div>
+  <div class="wrapper2">
+    <div class="row">six</div>
+    <div class="row">seven</div>
+  </div>
+</html>
